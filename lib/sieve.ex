@@ -5,6 +5,6 @@ defmodule Sieve do
 
   defp calc_primes([]), do: []
   defp calc_primes([head|tail]) do
-    [head | calc_primes(Enum.reject(tail, fn(x) -> rem(x, head) == 0 end))]
+    [head | calc_primes(Enum.reject(tail, &(rem(&1, head) == 0)))]
   end
 end
