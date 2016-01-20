@@ -13,7 +13,7 @@ defmodule Sieve do
   end
 
   defp calc_primes([]), do: []
-  defp calc_primes([head|tail]) do
+  defp calc_primes([head | tail]) do
     [head | calc_primes(Enum.reject(tail, &(rem(&1, head) == 0)))]
   end
 end
