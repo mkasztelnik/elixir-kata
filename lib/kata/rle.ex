@@ -19,7 +19,7 @@ defmodule Kata.RLE do
     [1, {2, 3}, 3, {4, 2}, 5, {6, 4}]
    """
   def encode([]), do: []
-  def encode([head | [head | tail]]), do: encode([{head, 2} | tail])
-  def encode([{head, n} | [head | tail]]), do: encode([{head, n + 1} | tail])
+  def encode([head, head | tail]), do: encode([{head, 2} | tail])
+  def encode([{head, n}, head | tail]), do: encode([{head, n + 1} | tail])
   def encode([head | tail]), do: [head | encode(tail)]
 end
