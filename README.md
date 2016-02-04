@@ -1,4 +1,4 @@
-# Elixir katas
+# Elixir katas [![Build Status](https://travis-ci.org/mkasztelnik/elixir-kata.svg)](https://travis-ci.org/mkasztelnik/elixir-kata)
 
 Set o elixir katas made from time to time to practice programming in elixir language.
 
