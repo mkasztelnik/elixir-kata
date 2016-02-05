@@ -24,6 +24,13 @@ iex> Kata.RomanNumeral.converts(28)
 "XXVIII"
 ```
 
+## [Fizz Buzz](https://en.wikipedia.org/wiki/Fizz_buzz) kata
+
+```elixir
+iex> Kata.FizzBuzz.talk(15)
+"FizzBuzz"
+```
+
 ## Test
 
 ```
