@@ -17,7 +17,7 @@ iex> Kata.RLE.encode([1, 2, 2, 2, 3, 4, 4, 5, 6, 6, 6, 6])
 [1, {2, 3}, 3, {4, 2}, 5, {6, 4}]
 ```
 
-## Arabic to roman number kata
+## [Arabic](https://en.wikipedia.org/wiki/Arabic_numerals) to [roman](https://en.wikipedia.org/wiki/Roman_numerals) number kata
 
 ```elixir
 iex> Kata.RomanNumeral.converts(28)
