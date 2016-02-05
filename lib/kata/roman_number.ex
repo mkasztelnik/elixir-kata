@@ -37,14 +37,9 @@ defmodule Kata.RomanNumeral do
     "XXVIII"
   """
   def converts(number), do: converts(number, @numerals)
-
-  defp converts(number, _) when number < 1 do
-    ""
-  end
-
+  defp converts(number, _) when number < 1, do: ""
   defp converts(number, [{arabic, roman} | _]) when number >= arabic do
     roman <> converts(number - arabic)
   end
-
   defp converts(number, [_ | tail]), do: converts(number, tail)
 end
