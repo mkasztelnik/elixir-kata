@@ -13,10 +13,6 @@ defmodule Kata.Sieve do
 
   defp calc_primes([]), do: []
   defp calc_primes([head | tail]) do
-    [head | tail |> rm_multiplicity(head) |> calc_primes]
-  end
-
-  defp rm_multiplicity(list, nr) do
-    list |> Enum.reject(&rem(&1, nr) == 0)
+    [head | tail |> Enum.reject(&rem(&1, head) == 0) |> calc_primes]
   end
 end
